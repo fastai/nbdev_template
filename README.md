@@ -1,2 +1,4 @@
-# nbdev_template
-Template for nbdev projects
+# nbdev template
+
+Use this template to more easily create your nbdev project.
+
