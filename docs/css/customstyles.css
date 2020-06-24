@@ -1304,3 +1304,28 @@ h4 code {
 input.gsc-input {
     font-size: 12px !important;
 }
+
+details.description[open] summary::after {
+  content: attr(data-open);
+}
+
+details.description:not([open]) summary::after {
+  content: attr(data-close);
+}
+
+details.description summary {
+    text-align: right;
+    font-size: 15px;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+details + div.output_wrapper {
+    /* show/hide code */
+    margin-top: 25px;
+}
+
+div.input + details {
+    /* show/hide output */
+    margin-top: -25px;
+}
