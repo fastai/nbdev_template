@@ -333,7 +333,7 @@ div#toc >ul::before {
     margin-left:auto;
     margin-right:auto;
     width:70px;
-    padding-top:150px;
+    padding-top:0px;
     padding-bottom:40px;
     padding-left:10px;
 }
@@ -821,7 +821,7 @@ pre, table code {
 }
 
 pre {
-    margin: 25px 0px;
+    /*margin: 25px 0px;*/
 }
 
 #json-box-container pre {
@@ -1253,18 +1253,23 @@ h4.panel-title {
     }
 }
 
+.code_cell {
+        margin: 10px 0px;
+}
+
 .input_area pre {
-        padding-bottom: 3;
-        margin-top: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin: 0px;
         background-color: #f5f1e0;
-        border: 0px;
+        /*border: 0px;*/
 }
 .output_area pre {
-        padding-top: 3;
-        margin-top: -25px;
-        margin-bottom: 10px;
-        border: 0px;
+        padding-top: 3px;
+        padding-bottom: 3px;
         padding-left: 2em;
+        margin: 0px;
+        /*border: 0px;*/
 }
 .pytest_card {
     padding: 10px 1em 4px 1em;
@@ -1303,4 +1308,37 @@ h4 code {
 }
 input.gsc-input {
     font-size: 12px !important;
+}
+
+details.description[open] summary::after {
+  content: attr(data-open);
+}
+
+details.description:not([open]) summary::after {
+  content: attr(data-close);
+}
+
+details.description summary {
+    text-align: right;
+    font-size: 15px;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+details + div.output_wrapper {
+    /* show/hide code */
+    margin-top: 25px;
+}
+
+div.input + details {
+    /* show/hide output */
+    margin-top: -25px;
+}
+
+.output_wrapper{
+    /*overflow: scroll;*/
+}
+
+.notebook-badge-image {
+  border:0 !important;
 }
