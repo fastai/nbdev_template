@@ -1,3 +1,5 @@
+# :warning: This template is for an old version of nbdev, nbdev v1.  The template for v2 is [here](https://github.com/fastai/nbdev-template)
+
 # nbdev template
 
 Use this template to more easily create your [nbdev](https://nbdev.fast.ai/) project.
